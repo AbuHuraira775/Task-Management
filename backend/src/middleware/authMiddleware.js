@@ -25,6 +25,7 @@ const protect = asyncHandler(async (req, res, next) => {
 
     // set user details in the request object
     req.user = user;
+    console.log("user from protect ",user)
 
     next();
   } catch (error) {
